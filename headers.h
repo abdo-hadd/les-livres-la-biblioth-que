@@ -1,14 +1,15 @@
 #ifndef _FUNCTION
 #define _FUNCTION
-                                /*§§§§§§§§§§§§§§§§§§§§§§§§ - LES INCLUDES - §§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
+                                /*Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§ - LES INCLUDES - Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§*/
 #include <stdio.h>                  /* pour les fonction d'enter sortie printf , scanf ... */
 #include<stdlib.h>                  /*pour les fonctions 'system' et fonction atoi() */
 #include<string.h>                  /*pour fonction strlen */
 #include<ctype.h>                   /* pour les deux fonctions isalpha et ispunct */
-#include<regex.h>                   /* regexe pour vérifiecation de l'email */
+#include<regex.h>                   /* regexe pour vÃ©rifiecation de l'email */
 #define max 100
 #define max_emprunts 3
-                                /*§§§§§§§§§§§§§§§§§§§§§§§§ - LES COLERS - §§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
+#define CLEAR "cls"
+                                /*Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§ - LES COLERS - Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§*/
 #define RED   "\x1b[91m"
 #define JAN   "\x1b[93m"
 #define GRN   "\x1b[92m"
@@ -22,10 +23,10 @@
 #define VIOM  "\x1b[35m"
 #define BLEM  "\x1b[34m"
 #define BLEN  "\x1b[36m"
-                                /*§§§§§§§§§§§§§§§§§§§§§§§§ - STRUCT - §§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
+                                /*Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§ - STRUCT - Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§*/
 
 
-typedef struct  /* structure d'information de chaque adhérent  */
+typedef struct  /* structure d'information de chaque adhÃ©rent  */
 {
     int num_adh;
     char nom_adh[max];
@@ -57,7 +58,7 @@ static adherent Un_Adherent;
 static livre Information_livre[max];
 static livre Un_Livre;
 
-                                /*§§§§§§§§§§§§§§§§§§§§§§§§ - LES PRPTOTYPES - §§§§§§§§§§§§§§§§§§§§§§§§§§§§*/
+                                /*Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§ - LES PRPTOTYPES - Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§Â§*/
 
 void Ajouter_adherent();
 int Libre_place_Adherent(int num);
